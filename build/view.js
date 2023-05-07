@@ -1,0 +1,1 @@
+window.addEventListener("load",(()=>{document.querySelectorAll(".wp-block-poena-code").forEach((e=>{const o=e.querySelector(".poe-code-copy"),t=e.querySelector("pre code");navigator.clipboard?o.addEventListener("click",(()=>{navigator.clipboard.writeText(t.innerText).then((()=>{o.innerText="Copied!",setTimeout((()=>{o.innerText="Copy"}),2e3)}))})):o.style.display="none"}))}));

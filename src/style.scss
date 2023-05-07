@@ -1,0 +1,38 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-poena-code {
+	// This block has customizable padding, border-box makes that more predictable.
+	box-sizing: border-box;
+	background-color: var(--wp--preset--color--silver);
+	border-color: var(--wp--preset--color--cyan-bluish-gray);
+	border-width: 1px;
+	border-radius: 2px;
+	border-style: solid;
+
+	pre {
+		border-top: 1px solid #eee;
+		margin-top: 2.2rem;
+		margin-bottom: 0;
+	}
+
+	// Provide a minimum of overflow handling and ensure the code markup inherits
+	// the font-family set on pre.
+	code {
+		display: block;
+		font-family: inherit;
+		overflow-wrap: break-word;
+		white-space: pre-wrap;
+	}
+
+	.poe-code-copy {
+		float: right;
+		text-align: right;
+		font-size: 1rem;
+		margin: 6px;
+	}
+}
