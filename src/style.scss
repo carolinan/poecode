@@ -13,6 +13,8 @@
 	border-width: 1px;
 	border-radius: 2px;
 	border-style: solid;
+	font-size: var(--wp--preset--font-size--small); // fallback
+	font-size: var(--wp--preset--font-size--extra-small);
 
 	pre {
 		border-top: 1px solid #eee;
@@ -27,12 +29,20 @@
 		font-family: inherit;
 		overflow-wrap: break-word;
 		white-space: pre-wrap;
+		padding: 1rem;
 	}
 
-	.poe-code-copy {
-		float: right;
-		text-align: right;
-		font-size: 1rem;
-		margin: 6px;
+	// Override the theme styles for buttons.
+	button.poe-code-copy {
+		float: right !important;
+		font-size: 1rem !important;
+		margin: 6px !important;
+		text-align: right !important;
+		padding: 1px 6px !important;
+		border: 1px solid !important;
+		box-shadow: none !important;
+		border-radius: 3px!important;
+		line-height: normal !important;
+		color: #111 !important;
 	}
 }
