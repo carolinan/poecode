@@ -9,8 +9,8 @@ window.addEventListener( 'load', () => {
 		const codeContent = codeBlock.querySelector(
 			'pre code'
 		);
-
-		if ( navigator.clipboard) {
+		// Note that the clipboard only works on https.
+		if ( navigator.clipboard ) {
 			copyButton.addEventListener('click', () => {
 				navigator.clipboard.writeText(codeContent.innerText).then(() => {
 					copyButton.innerText = 'Copied!';
